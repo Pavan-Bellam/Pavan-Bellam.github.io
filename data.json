@@ -1,69 +1,58 @@
 {
   "name": "Pavan Kumar Bellam",
   "title": "AI Engineer",
-  "tagline": "Building production ML systems that actually work",
+  "tagline": "Building production AI systems that actually work",
   "email": "pavankumarbellam6@gmail.com",
   "phone": "585-230-6252",
   "github": "https://github.com/Pavan-Bellam",
   "linkedin": "https://www.linkedin.com/in/pavan-kumar-bellam-872892165/",
 
   "about": [
-    "MS in Artificial Intelligence from RIT. I've spent years building production ML systems — from recommendation engines and computer vision pipelines to LLM-powered applications.",
-    "My philosophy is simple: a model that only works in a Jupyter notebook is just an expensive experiment. I build systems that scale, handle edge cases, and work when the data gets messy."
+    "MS in AI from RIT. I build ML systems from scratch: empty repo, no data pipeline, no infra, nothing. That's where I've spent most of my time, on early-stage teams where 0-to-1 was the only kind of work that existed. Recommendation engines, computer vision pipelines, LLM applications with retrieval. Different domains, same pattern: figure out what to build, then build all of it.",
+    "Training a model is the easy part. The real work is making it fast enough to serve, cheap enough to run, and reliable enough that you stop checking the logs at midnight. I've shipped on AWS with Terraform, proper CI/CD, and infrastructure that doesn't fall over when you're not looking. Every project here has baselines, benchmarks, and failure modes documented. If it doesn't have numbers, it doesn't go on this page."
   ],
 
-  "education": {
-    "school": "Rochester Institute of Technology",
-    "degree": "MS in Artificial Intelligence",
-    "location": "Rochester, New York",
-    "period": "Aug 2023 – May 2025",
-    "highlights": [
-      {
-        "role": "Research Assistant (CLaSP)",
-        "description": "Built NLP demo platform with SHAP/LIME interpretability; deployed via Docker on in-house servers"
-      },
-      {
-        "role": "Research Assistant (MABL)",
-        "description": "Developed two-stage VAE for RF signal fault detection, 93% F1 at 0.2% signal deviation"
-      }
-    ]
+  "education": [
+    {
+      "school": "Rochester Institute of Technology",
+      "degree": "MS in Artificial Intelligence",
+      "location": "Rochester, New York",
+      "period": "Aug 2023 – May 2025"
+    },
+    {
+      "school": "Jawaharlal Nehru Technological University",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "location": "Hyderabad, India",
+      "period": "July 2018 – March 2022"
+    }
+  ],
+
+  "skills": {
+    "Languages": ["Python", "TypeScript", "SQL"],
+    "ML & Training": ["PyTorch", "Transformers", "TRL", "DeepSpeed", "LoRA/PEFT", "vLLM", "XGBoost"],
+    "LLM & RAG": ["LangChain", "LangGraph", "Hugging Face", "OpenAI API", "Cohere"],
+    "MLOps & Backend": ["MLflow", "Airflow", "W&B", "FastAPI", "Node.js"],
+    "Cloud & Infra": ["AWS (ECS, S3, SQS, Lambda)", "Docker", "Terraform", "GitHub Actions"],
+    "Databases": ["PostgreSQL", "MongoDB", "Pinecone", "Redis"]
   },
 
+  "achievements": [
+    {
+      "title": "Google Summer of Code Winner",
+      "date": "May 2022"
+    },
+    {
+      "title": "AWS Certified Solutions Architect – Associate",
+      "date": "August 2025"
+    },
+    {
+      "title": "Presented at C-MIMI, Johns Hopkins University",
+      "description": "Abstract on Tubules Detection using Deep Learning",
+      "date": "2022"
+    }
+  ],
+
   "experience": [
-    {
-      "company": "Rochester Institute of Technology (CLaSP)",
-      "role": "Graduate Research Assistant",
-      "type": "Research",
-      "location": "Rochester, NY",
-      "period": "Jan 2024 – May 2025",
-      "highlights": [
-        "Developed an NLP model demonstration platform with Angular frontend and microservices backend (Tornado for ML, Node.js for API) achieving 920ms average response time",
-        "Integrated SHAP and LIME for model interpretability across PyTorch, TensorFlow, and Hugging Face frameworks"
-      ]
-    },
-    {
-      "company": "Rochester Institute of Technology (MABL)",
-      "role": "Graduate Research Assistant",
-      "type": "Research",
-      "location": "Rochester, NY",
-      "period": "Sep 2024 – May 2025",
-      "highlights": [
-        "Designed a two-stage VAE for fault detection in RF Generator signal data using Gaussian and GMM priors",
-        "Achieved an F1-score of 93% with sensitivity of 0.2 at 95% confidence"
-      ]
-    },
-    {
-      "company": "Rochester Institute of Technology",
-      "role": "Summer Programming Intern",
-      "type": "Internship",
-      "location": "Rochester, NY",
-      "period": "June 2024 – Aug 2024",
-      "highlights": [
-        "Performed exploratory data analysis on biometric data: distribution analysis, outlier detection, and preprocessing",
-        "Engineered features via time and frequency domain analysis (PSD, peak detection, slope extraction) for resonance frequency identification",
-        "Built Streamlit dashboard with Plotly for multi-subject comparison and automated PDF report generation"
-      ]
-    },
     {
       "company": "English Gurukul",
       "role": "Software Engineer (Founding Team)",
@@ -90,52 +79,104 @@
     }
   ],
 
+  "academic": [
+    {
+      "lab": "CLaSP Lab",
+      "role": "Graduate Research Assistant",
+      "period": "Jan 2024 – May 2025",
+      "highlights": [
+        "Developed NLP model demonstration platform with Angular frontend and microservices backend (Tornado for ML, Node.js for API) achieving 920ms average response time",
+        "Integrated SHAP and LIME for model interpretability across PyTorch, TensorFlow, and Hugging Face frameworks"
+      ]
+    },
+    {
+      "lab": "MABL Lab",
+      "role": "Graduate Research Assistant",
+      "period": "Sep 2024 – May 2025",
+      "highlights": [
+        "Designed a two-stage VAE for fault detection in RF Generator signal data using Gaussian and GMM priors",
+        "Achieved 93% F1 score at 0.2% signal deviation threshold"
+      ]
+    },
+    {
+      "lab": "RIT",
+      "role": "Summer Programming Intern",
+      "period": "June – Aug 2024",
+      "highlights": [
+        "Built biometric data analysis pipeline for resonance frequency identification",
+        "Engineered features via time and frequency domain analysis (PSD, peak detection, slope extraction)",
+        "Created Streamlit dashboard with automated reporting"
+      ]
+    }
+  ],
+
   "projects": [
     {
       "name": "CiteMate",
-      "tagline": "AI Research Writing Assistant",
+      "tagline": "Real-time research writing assistant",
       "github": "https://github.com/Pavan-Bellam/CiteMate",
-      "description": "Real-time research writing assistant using a hierarchical multi-agent system that corrects grammar, discovers supporting and opposing literature, and answers questions with citations.",
+      "description": "Built a real-time research writing assistant using a hierarchical multi-agent system that corrects grammar, discovers supporting and opposing literature, and answers questions with citations from indexed papers.",
       "highlights": [
-        "Scored 9.0/10 vs GPT-5 (4.0/10) on LLM-as-judge evaluation with 24% lower latency",
-        "Deployed on AWS using Terraform IaC and GitHub Actions CI/CD with Langtrace observability"
+        "9/10 on LLM-judged paragraph analysis vs 4/10 for GPT-5 with web search",
+        "Four-agent architecture: Interface → Router → Scout/Expert with MongoDB checkpointing",
+        "92.7% Hit@5 on 303-query benchmark — hybrid retrieval without reranking (reranking added 500-1000ms for only ~5% gain)"
       ],
-      "tech": ["Multi-Agent Systems", "LangGraph", "FastAPI", "AWS", "Terraform"]
+      "tech": ["LangGraph", "Pinecone", "MongoDB", "AWS ECS", "Terraform"],
+      "deepDive": {
+        "problem": "Web-augmented LLMs only pull abstracts from ArXiv — they can't read full PDFs or index actual paper content. When you need to verify a claim against what a paper actually found (not just the abstract), existing tools fall short.",
+        "solution": "A four-agent system (Interface, Router, Scout, Expert) orchestrated with LangGraph. Interface handles local corrections — grammar, style, cross-paragraph consistency — and identifies claims needing evidence. Those escalate to Router, which manages Expert agents (each loaded with full paper context via MongoDB checkpointing) and a Scout agent for hybrid retrieval. Scout searches with a 3-call limit, auto-excludes seen papers, answers from chunks when possible, and spawns Experts when deeper context is needed. Chose hybrid search without reranking — reranking added 500-1000ms latency for only ~5% accuracy gain, not worth the tradeoff.",
+        "evaluation": "Benchmarked 12 retrieval configurations across semantic, BM25, hybrid, and 3 reranker combinations on 303 queries. Hybrid without reranking hit 92.7% Hit@5 at 500ms — semantic alone was 72.6%, BM25 was 75.6%. Multi-agent system scored 9/10 on LLM-judged paragraph analysis (47 test paragraphs) vs 4/10 for GPT-5 with web search — the gap is full-paper access vs abstract-only.",
+        "infra": "ArXiv ingestion pipeline on ECS Fargate — fetches papers, parses PDFs with Unstructured, chunks them, generates dense (text-embedding-3-large) and sparse (BM25) embeddings with Redis-based batching, stores in dual Pinecone indices. Webapp served on ECS using FastAPI with Langtrace observability. Deployed on AWS with Terraform modules, GitHub Actions CI/CD with OIDC auth, and per-developer isolated environments."
+      }
     },
     {
-      "name": "ScoutIR",
-      "tagline": "RAG-Based Academic Search",
-      "github": "https://github.com/Pavan-Bellam/ScoutIR",
-      "description": "RAG-based academic paper search engine across 2K+ indexed papers using dense embeddings, BM25 sparse vectors, and Cohere reranking.",
+      "name": "SmolMl",
+      "tagline": "GRPO reinforcement learning for math reasoning on small LLMs",
+      "github": "https://github.com/Pavan-Bellam/smolRL",
+      "description": "Can you teach a 7B model to reason through math using only RL — no supervised fine-tuning, no format rewards, just accuracy signal? This project answers that question.",
       "highlights": [
-        "Achieved 93% Hit@5 on a custom 303-query benchmark",
-        "Engineered ingestion pipeline with SQS, S3, Redis batching, indexing 80K chunks into Pinecone"
+        "+13% absolute on MATH-500 (61.6% → 74.6%) after only 100 training steps — pure RL from base model",
+        "80% on MATH-500 with test-time scaling (k=16 majority vote)",
+        "16% on AIME 2024 (30 problems) — for context, DeepSeek-distilled hits 26% with 800k training tokens",
+        "INT4 quantized model retains near-full accuracy at 1.2-3x higher throughput"
       ],
-      "tech": ["RAG", "Pinecone", "Cohere", "SQS", "Redis"]
+      "tech": ["TRL (GRPO)", "vLLM", "DeepSpeed ZeRO-3", "SymPy", "W&B"],
+      "deepDive": {
+        "problem": "Models like o1 and DeepSeek-R1 proved that RL can teach LLMs to reason step-by-step, but training details are closed-source and compute requirements are absurd. I wanted to see how far you can push a 7B base model using only RL.",
+        "solution": "GRPO training pipeline taking base Qwen-2.5-7B (never seen fine-tuning) with Group Relative Policy Optimization on math problems. Key choices: DAPO loss to avoid short-response bias, asymmetric clipping, accuracy-only binary rewards with flexible answer extraction, and entropy token filtering to focus gradients where the model is uncertain. Entropy started collapsing around step 100 — increasing epsilon higher would have helped extend training further.",
+        "evaluation": "Eval runs vLLM offline inference across MATH-500, GSM8K, and AIME 2024. Grading handles messy math answers — LaTeX normalization, numeric comparison with tolerance, SymPy symbolic equivalence with timeout protection. Test-time scaling generates n completions per problem and evaluates voting strategies (naive majority, logprob-weighted, shortest-majority) at multiple sample budgets.",
+        "infra": "4x H100 with DeepSpeed ZeRO-3 and Flash Attention 2 for efficient training."
+      }
     },
-    {
-      "name": "SmolRL",
-      "tagline": "RL for Mathematical Reasoning",
-      "github": "https://github.com/Pavan-Bellam/SmolRL",
-      "description": "Trained a 7B language model for mathematical reasoning using GRPO reinforcement learning, with test-time compute scaling.",
-      "highlights": [
-        "Improved GSM8K from 78% → 90% and MATH-500 from 58% → 72%",
-        "Test-time scaling pushed to 80% MATH-500 and 94% GSM8K",
-        "3× throughput via vLLM with <1% accuracy drop after quantization"
-      ],
-      "tech": ["GRPO", "DeepSpeed", "vLLM", "PyTorch", "H100 GPUs"]
-    },
-    {
+        {
       "name": "Text-to-SQL",
-      "tagline": "Natural Language to SQL",
+      "tagline": "Natural Language to SQL with LoRA",
       "github": "https://github.com/Pavan-Bellam/Text-to-SQL",
-      "description": "Trained Qwen2.5-Coder-7B with LoRA on 2.5M samples to convert natural language questions into SQL using chain-of-thought reasoning.",
+      "description": "Fine-tuned Qwen2.5-Coder-7B with LoRA on 2.5M samples to convert natural language questions into SQL using chain-of-thought reasoning.",
       "highlights": [
         "Scaled training across 8×A100 GPUs with DeepSpeed ZeRO-2",
         "Fault-tolerant S3 checkpointing for spot instance recovery",
         "Sub-400ms inference via vLLM with prefix caching"
       ],
-      "tech": ["LoRA", "DeepSpeed", "vLLM", "A100 GPUs", "Chain-of-Thought"]
+      "tech": ["LoRA", "DeepSpeed", "vLLM", "A100 GPUs", "PyTorch"]
+    },
+    {
+      "name": "SimpleChat",
+      "tagline": "Production-ready chatbot with 3-tier memory",
+      "github": "https://github.com/Pavan-Bellam/A-Simple-Chatbot",
+      "description": "Built a production-grade chatbot with three memory types: last K messages for immediate context, running summary for long-term coherence, and semantic search over full history for relevant information retrieval.",
+      "highlights": [
+        "Three-tier memory: recency (last K) + running summary + pgvector semantic retrieval",
+        "Full AWS stack: ECS + EC2, RDS PostgreSQL with pgvector, Cognito JWT auth, SSM secrets",
+        "Terraform IaC: VPC, RDS, ECS modules with cost-optimized defaults (free-tier eligible)"
+      ],
+      "tech": ["FastAPI", "pgvector", "AWS ECS", "Cognito", "Terraform"],
+      "deepDive": {
+        "problem": "Most chatbot implementations stuff the last N messages into context and call it a day. That works until conversations get long — the model loses track of relevant things said 50 messages ago while wasting tokens on irrelevant recent ones. I wanted a proper memory system with multiple retrieval strategies, deployed as a production-grade AWS service.",
+        "solution": "A FastAPI chatbot with three-tier memory management: (1) last K messages for immediate conversational context, (2) running summary that compresses older exchanges into a coherent narrative, and (3) pgvector semantic search over full conversation history to pull in relevant older messages when needed. Backed by PostgreSQL with pgvector extension, authenticated via AWS Cognito JWTs, deployed on ECS with EC2 launch type.",
+        "evaluation": "Three-tier retrieval surfaces relevant context from anywhere in conversation history while maintaining coherence. Full auth flow with Cognito JWTs. No credentials in environment variables — everything injected via SSM Parameter Store at container startup.",
+        "infra": "Separate Terraform repo with modules for VPC (public/private subnets, optional NAT gateway), RDS, ECS with autoscaling capacity providers, and SSM. Cost-optimized defaults: free-tier eligible instance types, NAT gateway disabled by default. Dockerized dev with pre-built base image on Docker Hub for fast builds and hot reload."
+      }
     }
   ],
 
